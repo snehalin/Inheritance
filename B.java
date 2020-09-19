@@ -1,3 +1,4 @@
+import com.hefshine.package2.A;
 
 public class B extends A//child class
 {

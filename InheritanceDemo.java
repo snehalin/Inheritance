@@ -28,9 +28,67 @@
     ---
     }
     
+   2.Multilevel Inheritance
+   
+    A  base
+    |
+    B derived
+    |
+    C derived 
     
+    College
+    |
+    Department
+    |
+    Class
     
+    3.Hierarchical -->1 Base class and two or more Derived
+    
+      A
+    | \ \
+    B c D
+    
+      Department
+     |    |      |
+    CSE  Civil  MECH
+    
+    4. Multiple Inheritance--> 2 or more Base and 1 child
+    void show()
+    
+    B  C  D 
+     \ |  /
+       A
+       
+       
+   5.Hybrid-->Combination of any two types
+   
+   A
+   |
+   B
+  / |   
+  C D
+  
+  
+  
+  
+  A  B
+  \  /
+    C
+    /\
+    D E 
  */
+
+//Access Modifiers
+/*1.public--variables,methods,constructor,class
+2.private-- variables,methods,constructor
+3.protected--variables,methods,constructor
+4.default-- variables,methods,constructor,class*/
+
+
+
+
+
+
 public class InheritanceDemo {
 
 }
