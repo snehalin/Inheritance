@@ -1,35 +1,25 @@
-import com.hefshine.package2.A;
 
-public class B extends A//child class
+public class B extends A {
+int b;
+int z;
+B()
+{//A()
+	super();
+	System.out.println("B's Constructor");
+	b=20;
+	z=200;
+	//super();
+}
+void print()
 {
+	System.out.println("In child class a="+a+"b="+b
+			+"z="+z+"parent z="+super.z);
+  
+}
 
-	int b;
-	int a;
-	B()
-	{
-		//super();//A();
-		System.out.println("B constructor");
-		b=20;
-		a=30;
-	}
-	
-	B(int x)
-	{
-		super(x);
-		//super(x);
-		b=x;
-		a=x;
-		
-	}
-	B(int x,int y,int z)
-	{
-		super(x);//parameterised parent
-		b=y;
-		a=z;
-	}
-	void display()//Method Overriding
-	{
-		System.out.println("b="+b+"a="+a+"A a="+super.a);
-		super.display();//parent
-	}
+void add()//MethodOverriding
+{
+	System.out.println(b+10+"--> B's Add()");
+	super.add();//A class add()
+}
 }
